@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_form.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1>Formulario de Carrusel de Imágenes</h1>
+
+    <form action="procesar_carrusel.php" method="post" enctype="multipart/form-data">
+        <!-- Seleccionar imagen -->
+        <label for="imagen">Seleccionar Imagen:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+        <!-- Descripción de la imagen (opcional) -->
+        <label for="descripcion">Descripción (opcional):</label>
+        <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Subir Imagen</button>
+    </form>
+
+    <h1>Formulario para miembros</h1>
+    <form action="miembros.php" method="POST">
+
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+        </div>
+        <div>
+            <label for="rango">Rango</label>
+            <input type="text" name="rango" id="rango" required>
+        </div>
+        <input type="submit" name="crear" value="crear">
+    </form>
+    <form action="miembros.php">
+        <h2>Leer usuarios</h2>
+        <input type="submit" name="leer" value="leer">
+    </form>
+
+
+    
+    <form action="miembros.php" method="post">
+        <h2>modificar usuarios</h2>
+        <label for="id_update" class="form-label">ID de Usuario:</label>
+        <input type="number" name="id" id="id_update" class="form-control" required>
+        <div>
+            <label for="nuevo_nombre" class="form-label">Nuevo Nombre:</label>
+            <input type="text" name="nuevo_nombre" id="nuevo_nombre" class="form-control" required>
+        </div>
+        <input type="submit" name="modificar" value="modificar">
+    </form>
+
+
+
+    <form action="miembros.php" method="post" >
+        <h2>Eliminar usuarios</h2>
+        <div class="col">
+            <label for="id_delete" class="form-label">ID de Usuario:</label>
+            <input type="number" name="id" id="id_delete" class="form-control" required>
+        </div>
+            <input type="submit" name="eliminar" value="eliminar">
+    </form>
+
+
+    <h1>Formulario de Publicación</h1>
+
+    <form action="procesar_publicacion.php" method="post" enctype="multipart/form-data">
+        <!-- Título de la publicación -->
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <!-- Contenido de la publicación -->
+        <label for="contenido">Contenido:</label>
+        <textarea id="contenido" name="contenido" rows="4" required></textarea>
+
+        <!-- Adjuntar imagen (opcional) -->
+        <label for="imagen">Adjuntar Imagen:</label>
+        <input type="file" id="imagen" name="imagen">
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Publicar</button>
+    </form>
+
+</body>
+
+</html>

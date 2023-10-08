@@ -1,0 +1,63 @@
+*{
+  font-family: lora;
+  
+}
+/* TITULOS */
+.integrantesText{
+  text-align: center;
+  font-size: 60px;
+  color: #000000;
+  margin-top: 20px;
+  
+}
+
+/* NAVBAR SUPERIOR*/ 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+ /* background: rgb(82,214,206);
+background: radial-gradient(circle, rgba(82,214,206,1) 6%, rgba(38,58,100,1) 89%); */
+background: rgb(82,214,206);
+background: radial-gradient(circle, rgba(82,214,206,0.8155637254901961) 6%, rgba(38,58,100,1) 89%);
+}
+.navbar a{
+  font-size: 250%;
+}
+
+
+
+
+#carouselExample img {
+    width: 1400px;
+    height: 853px;
+  }
+
+
+#boton{
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  
+}
+/*PUBLICACIONES*/
+
+
+
+
+
+
+
+/* FOOTER REDES SOCIALES*/
+
+/*COPYRIGHT*/
+h6, p {
+  color: grey;
+  text-align: center;
+}
+
+
