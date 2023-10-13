@@ -25,6 +25,7 @@ background: radial-gradient(circle, rgba(82,214,206,0.8155637254901961) 6%, rgba
 }
 .navbar a{
   font-size: 300%;
+  width: 100%;
 }
 
 
@@ -53,43 +54,7 @@ background: radial-gradient(circle, rgba(82,214,206,0.8155637254901961) 6%, rgba
 
 
 
-/*REDES SOCIALES*/
-.social-sharing {
-	position: fixed;
-	
-	left: 0;
-	bottom: 0;
-  z-index: 9999;
-}
 
-.social-sharing ul.menu-social {
-	list-style: none;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: nowrap;
-	-ms-flex-wrap: nowrapwrap;
-	flex-wrap: nowrap;
-}
-
-.social-sharing ul.menu-social li {
-	flex: 0 1 40px;
-	height: 40px;
-}
-.social-sharing ul.menu-social li.newsletter {
-	flex: 1 1 auto;
-	line-height: 40px;
-	position: relative;
-	background-color: #fafafa;
-	background-image: repeating-linear-gradient(135deg, #ffe4e1 0px, #ffe4e1 5px, transparent 5px, transparent 10px, #e1f3ff 10px, #e1f3ff 15px, transparent 15px, transparent 20px);
-}
-.social-sharing ul.menu-social li.next {
-	flex: 1 1 auto;
-}
 
 /*COPYRIGHT*/
 h6, p {
@@ -122,4 +87,10 @@ h6, p {
 	  margin: auto;
 	}
   }
+p{
+  color: black;
+}
 
+.copy{
+  color: black;
+}
