@@ -6,7 +6,7 @@
 /* TITULOS */
 .integrantesText{
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   color: #000000;
   margin-top: 20px;
   
@@ -17,7 +17,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 100;
  /* background: rgb(82,214,206);
 background: radial-gradient(circle, rgba(82,214,206,1) 6%, rgba(38,58,100,1) 89%); */
 background: rgb(82,214,206);
@@ -31,8 +31,8 @@ background: radial-gradient(circle, rgba(82,214,206,0.8155637254901961) 6%, rgba
 
 
 #carouselExample img {
-    width: 1400px;
-    height: 853px;
+    
+	width: 100%;
   }
 
 
@@ -55,12 +55,11 @@ background: radial-gradient(circle, rgba(82,214,206,0.8155637254901961) 6%, rgba
 
 /*REDES SOCIALES*/
 .social-sharing {
-	display: block;
 	position: fixed;
-	width: 100%;
+	
 	left: 0;
 	bottom: 0;
-  z-index: 100;
+  z-index: 9999;
 }
 
 .social-sharing ul.menu-social {
@@ -98,4 +97,29 @@ h6, p {
   text-align: center;
 }
 
+
+/* Estilo para dispositivos con pantalla grande */
+@media (min-width: 992px) { 
+	.container-fluid {
+	  width: 80%;
+	  margin: auto;
+	}
+  }
+  
+  /* Estilo para dispositivos con pantalla mediana */
+  @media (min-width: 768px) and (max-width: 991px) {
+	.container-fluid {
+	  width: 90%;
+	  margin: auto;
+	}
+	
+  }
+  
+  /* Estilo para dispositivos con pantalla pequeña */
+  @media (max-width: 767px) {
+	.container-fluid {
+	  width: 100%;
+	  margin: auto;
+	}
+  }
 
